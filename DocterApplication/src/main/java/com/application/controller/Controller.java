@@ -28,6 +28,7 @@ public class Controller {
 
 	@PostMapping("/addDocters")
 	public List<Docter> addProducts(@RequestBody List<Docter> docters) {
+		system.out.println("Testing123");
 		return docterService.DocterList(docters);
 	}
 
